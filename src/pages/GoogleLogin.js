@@ -51,10 +51,10 @@ function GoogleLoginele() {
   }, [navigate]);
 
   const id =
-    "198981870943-60flsecdvvrqtikgr0p2f5eg801j23su.apps.googleusercontent.com";
+    "1019918519182-bb74on44ac9gg4faq9rsml1tm3gn22pp.apps.googleusercontent.com";
 
   const handleLogin = () => {
-    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/calendar%20https://www.googleapis.com/auth/userinfo.profile&access_type=offline&include_granted_scopes=true&response_type=code&client_id=${id}&redirect_uri=http://localhost:5000/api/events/oauth2callback`;
+    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/calendar%20https://www.googleapis.com/auth/userinfo.profile&access_type=offline&include_granted_scopes=true&response_type=code&client_id=${id}&redirect_uri=https://event-server-dp.onrender.com/api/events/oauth2callback`;
   };
 
   return (

@@ -125,7 +125,7 @@ export default function EventCreation() {
     setLoading(true);
 
     axios
-      .post("http://localhost:5000/api/events", eventData)
+      .post("https://event-server-dp.onrender.com/api/events", eventData)
       .then((response) => {
         setEvents([...events, response.data]);
         console.log(response.data);

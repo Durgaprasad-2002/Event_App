@@ -134,7 +134,7 @@ export default function EventUpdate() {
 
     axios
       .put(
-        `http://localhost:5000/api/events/${location.state.event.id}`,
+        `https://event-server-dp.onrender.com/api/events/${location.state.event.id}`,
         eventData
       )
       .then((response) => {

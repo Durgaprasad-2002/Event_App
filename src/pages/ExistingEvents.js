@@ -60,7 +60,7 @@ export default function ExistingEvents() {
       const access_token = Token.access_token;
       axios
         .delete(
-          `http://localhost:5000/api/events/?id=${ele}&googleToken=${access_token}`
+          `https://event-server-dp.onrender.com/api/events/?id=${ele}&googleToken=${access_token}`
         )
         .then(() => {
           toast(`${ele} Id Event is Deleted`);
@@ -86,7 +86,9 @@ export default function ExistingEvents() {
     const full = `${year}-${month}-${day}`;
 
     axios
-      .get(`http://localhost:5000/api/events?id=${user?.googleId}&date=${full}`)
+      .get(
+        `https://event-server-dp.onrender.com/api/events?id=${user?.googleId}&date=${full}`
+      )
       .then((data) => {
         setEvents([...data.data]);
         setModified(false);
