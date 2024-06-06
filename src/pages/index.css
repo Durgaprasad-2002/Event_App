@@ -548,6 +548,7 @@ body {
   gap: 10px;
 }
 .Event-card {
+  margin-bottom: 10px;
   background: white;
   box-shadow: 0px 0px 6px rgba(41, 40, 40, 0.5);
 }
