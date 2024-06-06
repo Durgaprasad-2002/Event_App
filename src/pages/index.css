@@ -532,7 +532,7 @@ body {
 
 .Events-container {
   width: auto;
-  min-height: 600px;
+  min-height: auto;
   height: 100%;
   background: rgb(227, 225, 225);
   margin: 10px;
