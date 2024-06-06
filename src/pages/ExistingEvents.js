@@ -149,7 +149,7 @@ export default function ExistingEvents() {
           </button>
         </div>
       </div>
-      <div className="Outer-Event-Conatiner">
+      <>
         {Events.length === 0 ? (
           <div className="outer-no-event">
             <img src={noevent} className="no-event" alt="No event" />
@@ -232,7 +232,7 @@ export default function ExistingEvents() {
             })}
           </div>
         )}
-      </div>
+      </>
 
       <button
         className="Create-BTN"

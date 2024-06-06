@@ -42,11 +42,6 @@ body {
   user-select: none;
 }
 
-/* .Events-container {
-  margin-bottom: 10px;
-  height: auto;
-} */
-
 .part-item-btn1 {
   font-size: 12px;
   padding: 8px 15px 8px 15px;
@@ -383,7 +378,8 @@ body {
 .Calender-Event-bar h3 {
   line-height: 0px;
 }
-f .Calender-Event-bar span {
+
+.Calender-Event-bar span {
   color: rgb(60, 64, 67);
   font-size: 14px;
 }
@@ -429,9 +425,7 @@ f .Calender-Event-bar span {
 }
 
 .footer {
-  position: relative;
-  width: 100%;
-  background-color: rgb(227, 225, 225);
+  background: rgb(227, 225, 225);
   text-align: center;
   padding: 15px;
 }
@@ -455,6 +449,7 @@ f .Calender-Event-bar span {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 300;
 }
 
 .Create-BTN:hover {
@@ -464,6 +459,7 @@ f .Calender-Event-bar span {
 .Create-BTN:active {
   background: #035dbd;
 }
+
 .not-found {
   height: 70vh;
   width: auto;
@@ -511,8 +507,8 @@ f .Calender-Event-bar span {
 }
 
 .outer-no-event {
+  height: 700px;
   display: flex;
-  height: 80svh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -520,7 +516,7 @@ f .Calender-Event-bar span {
 
 .outer-no-event2 {
   display: flex;
-  height: 100svh;
+  height: 100vh;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -534,13 +530,9 @@ f .Calender-Event-bar span {
   object-fit: contain;
 }
 
-.Outer-Event-Conatiner {
-  min-height: 600px;
-}
-
 .Events-container {
   width: auto;
-  min-height: 580px;
+  min-height: 600px;
   background: rgb(227, 225, 225);
   margin: 10px;
   padding: 5px 10px 10px 10px;
