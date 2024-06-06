@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { MdArrowLeft, MdArrowRight } from "react-icons/md";
 import CalendarDays from "./CalenderDays";
 import logo from "../Images/logo.png";
 import "./index.css";
@@ -41,20 +42,25 @@ export default function Calender() {
       <div className="Calender-Navigation-bar">
         <div className="Title">
           <img alt="LOGO" src={logo} className="logo" />
+          <div className="ToggelBTNS">
+            <div className="togglebtnsConatiner">
+              <button className="NavBTNS" onClick={() => changeMonth(-1)}>
+                <MdArrowLeft className="icon" />
+              </button>
+              <button className="NavBTNS" onClick={() => changeMonth(1)}>
+                <MdArrowRight className="icon" />
+              </button>
+            </div>
+            <h3 className="Month">
+              {months[currentDate.getMonth()]},{" "}
+              <span className="Year">{currentDate.getFullYear()}</span>
+            </h3>{" "}
+          </div>
         </div>
-        <div className="ToggelBTNS">
-          <button className="NavBTNS" onClick={() => changeMonth(-1)}>
-            <BsChevronLeft className="icon" />
-          </button>
-          <h3 className="Month">{months[currentDate.getMonth()]},</h3>{" "}
-          <h3 className="Year">{currentDate.getFullYear()}</h3>
-          <button className="NavBTNS" onClick={() => changeMonth(1)}>
-            <BsChevronRight className="icon" />
-          </button>
-          <button class="button-17" role="button" onClick={goToToday}>
-            Today
-          </button>
-        </div>
+
+        <button className="button-17" role="button" onClick={goToToday}>
+          Today
+        </button>
       </div>
       <div className="calender">
         <div className="weeks">

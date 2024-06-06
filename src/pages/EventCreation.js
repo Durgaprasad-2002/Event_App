@@ -56,7 +56,6 @@ export default function EventCreation() {
   };
 
   const HandleParticipants = (e) => {
-    console.log(partMail);
     setADD((ADDParticipants) => [...ADDParticipants, partMail]);
     document.getElementsByName("partMail")[0].value = "";
   };
@@ -69,7 +68,6 @@ export default function EventCreation() {
   }
 
   const removeParticipant = (ind) => {
-    console.log(ind);
     let newELE = removeElementByIndex(ADDParticipants, ind);
     setADD([...newELE]);
   };
@@ -78,7 +76,7 @@ export default function EventCreation() {
 
   function HandleInputs(e) {
     const { name, value } = e.target;
-    console.log(name, value);
+
     setTimes((prevTimes) => ({
       ...prevTimes,
       [name]: value,
@@ -119,8 +117,6 @@ export default function EventCreation() {
       userId: user.googleId,
       googleToken: Token.access_token,
     };
-
-    console.log(eventData);
 
     setLoading(true);
 

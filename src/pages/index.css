@@ -6,6 +6,22 @@ body {
   margin: 0;
 }
 
+.Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.togglebtnsConatiner {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .outer-Google-login {
   height: 100vh;
   display: flex;
@@ -101,10 +117,11 @@ body {
   gap: 5px;
   align-items: center;
   justify-content: center;
+  margin-left: 20px;
 }
 
 .icon {
-  font-size: 22px;
+  font-size: 32px;
 }
 
 .NavBTNS {
@@ -113,7 +130,7 @@ body {
   background: none;
   border: none;
   padding: 0px;
-  border-radius: 50%;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,11 +138,12 @@ body {
   color: rgb(74, 76, 77);
   font-weight: 200;
   cursor: pointer;
+  transition: all ease 0.5s;
 }
 
 .NavBTNS:hover {
-  background-color: white;
-  outline: 1px solid lightgray;
+  background-color: rgb(54, 53, 53);
+  color: white;
 }
 
 .NavBTNS:active {
@@ -141,7 +159,7 @@ body {
   align-items: center;
   appearance: none;
   background-color: #fff;
-  border-radius: 24px;
+  border-radius: 5px;
   border-style: none;
   box-shadow: rgba(152, 152, 152, 0.2) 0 3px 5px -1px,
     rgba(118, 118, 118, 0.14) 0 6px 10px 0,
@@ -154,7 +172,6 @@ body {
   font-family: "Google Sans", Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
-
   justify-content: center;
   letter-spacing: 0.25px;
   line-height: normal;
@@ -219,6 +236,10 @@ body {
 .Month {
   font-weight: lighter;
   user-select: none;
+  background: rgb(11, 156, 204);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  color: white;
 }
 
 .Year {
@@ -408,6 +429,7 @@ f .Calender-Event-bar span {
 }
 
 .footer {
+  position: relative;
   width: 100%;
   background-color: rgb(227, 225, 225);
   text-align: center;
@@ -513,12 +535,12 @@ f .Calender-Event-bar span {
 }
 
 .Outer-Event-Conatiner {
-  height: auto;
+  min-height: 600px;
 }
 
 .Events-container {
   width: auto;
-  min-height: 500px;
+  min-height: 580px;
   background: rgb(227, 225, 225);
   margin: 10px;
   padding: 5px 10px 10px 10px;
@@ -526,7 +548,7 @@ f .Calender-Event-bar span {
 .logout-container {
   display: flex;
   flex-direction: column-reverse;
-  align-items: flex-end;
+  align-items: center;
   gap: 10px;
 }
 .Event-card {
@@ -731,11 +753,41 @@ f .Calender-Event-bar span {
 
 /* ----------------------------------------------------------------- */
 @media (max-width: 400px) {
-  .logo {
-    display: none;
-    width: 35px;
-    height: 35px;
+  .togglebtnsConatiner {
+    border: 2px solid rgb(90, 88, 88);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
   }
+
+  .ToggelBTNS {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: lightblue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
   .Year {
     font-size: medium;
   }

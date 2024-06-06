@@ -24,7 +24,6 @@ export default function EventUpdate() {
   const [ADDParticipants, setADD] = useState(
     location.state.event.participants || []
   );
-  console.log(location.state);
 
   const ConvertTo12hr = (Eventtime) => {
     const timeArray = Eventtime.split(":");
@@ -109,8 +108,6 @@ export default function EventUpdate() {
     const day = padToTwoDigits(location.state?.Date?.number);
     const year = location.state?.Date?.year;
 
-    console.log(`${year}-${month}-${day}`);
-
     let user = JSON.parse(localStorage.getItem("user"));
     const Token = JSON.parse(localStorage.getItem("googleTokens"));
 
@@ -126,11 +123,7 @@ export default function EventUpdate() {
       googleToken: Token.access_token,
     };
 
-    console.log(eventData.date);
-
     setLoading(true);
-
-    console.log("event dtaa:" + eventData);
 
     axios
       .put(
@@ -143,6 +136,7 @@ export default function EventUpdate() {
         setTimeout(() => navigate("/"), 5000);
       })
       .catch((err) => {
+        console.log(err);
         toast("Failed to Update Event," + err?.response?.data?.error);
       })
       .finally(() => setLoading(false));

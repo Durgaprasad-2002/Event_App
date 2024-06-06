@@ -10,7 +10,7 @@ export default function Loader() {
         alignItems: "center",
       }}
     >
-      <div class="Loader_ANI" style={{ zIndex: "100" }}></div>
+      <div className="Loader_ANI" style={{ zIndex: "100" }}></div>
     </div>
   );
 }
