@@ -28,12 +28,12 @@ export default function ExistingEvents() {
     []
   );
 
-  // useEffect(() => {
-  //   if (!user?.googleId || isAccessTokenExpired(user.expiry_date)) {
-  //     localStorage.clear();
-  //     navigate("/login");
-  //   }
-  // }, [user]);
+  useEffect(() => {
+    if (!user?.googleId || isAccessTokenExpired(user.expiry_date)) {
+      localStorage.clear();
+      navigate("/login");
+    }
+  }, [user]);
 
   const handleEditEvent = useCallback(
     (event) => {
