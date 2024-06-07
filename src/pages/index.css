@@ -69,7 +69,8 @@ body {
   height: 300px;
   border-radius: 0px;
   background: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0 25px 100px 0 rgba(0, 0, 0, 0.1490196078);
 }
 
 .signin-btn {
@@ -536,9 +537,9 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: rgb(227, 225, 225);
-  margin: 10px;
-  padding: 5px 10px 10px 10px;
+  /* background: rgb(227, 225, 225); */
+  margin-top: 10px;
+  /* padding: px 0px 10px 0px; */
 }
 
 .logout-container {
@@ -547,6 +548,7 @@ body {
   align-items: center;
   gap: 10px;
 }
+
 .Event-card {
   margin-bottom: 10px;
   background: white;
@@ -554,7 +556,7 @@ body {
 }
 
 .bottem-event {
-  padding: 0px 10px 10px 10px;
+  padding: 0px 15px 10px 15px;
 }
 .Main-content {
   display: flex;
@@ -567,13 +569,12 @@ body {
 .disabled {
   display: none !important;
 }
+
 .Event-title {
   letter-spacing: 1.5px;
   height: auto;
   color: white;
-  padding-bottom: 5px;
-  height: auto;
-  padding: 25px 10px 20px 10px;
+  padding: 25px 15px 20px 15px;
   background: #3c4043;
 }
 
