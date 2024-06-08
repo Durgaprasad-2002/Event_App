@@ -143,7 +143,7 @@ export default function EventCreation() {
         hideProgressBar={false}
         newestOnTop
         closeOnClick
-        rtl
+        rtl={false}
         pauseOnFocusLoss={false}
         draggable
         pauseOnHover

@@ -14,7 +14,8 @@ body {
 }
 
 .togglebtnsConatiner {
-  border: 2px solid lightgray;
+  outline: 2px solid lightgray;
+  border: none;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -126,7 +127,7 @@ body {
   background: none;
   border: none;
   padding: 0px;
-  border-radius: 3px;
+  border-radius: px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +135,7 @@ body {
   color: rgb(74, 76, 77);
   font-weight: 200;
   cursor: pointer;
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
 }
 
 .NavBTNS:hover {
@@ -186,6 +187,7 @@ body {
   width: auto;
   will-change: transform, opacity;
   z-index: 0;
+  width: 70px;
 }
 
 .button-17:hover {
@@ -427,6 +429,7 @@ body {
 
 .footer {
   background: rgb(227, 225, 225);
+  color: #3c4043;
   text-align: center;
   padding: 15px;
   position: sticky;
@@ -441,7 +444,7 @@ body {
   width: fit-content;
   height: min-content;
   position: fixed;
-  bottom: 80px;
+  bottom: 120px;
   right: 40px;
   background: #007bff;
   border: none;
@@ -527,7 +530,7 @@ body {
 
 .no-event {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   margin: 10px;
   height: auto;
   object-fit: contain;
@@ -752,7 +755,8 @@ body {
 /* ----------------------------------------------------------------- */
 @media (max-width: 400px) {
   .togglebtnsConatiner {
-    border: 2px solid rgb(90, 88, 88);
+    outline: 2px solid lightgray;
+    border: none;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -775,7 +779,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: lightblue;
+    background: rgb(11, 156, 204);
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 0px 5px 0px 5px;

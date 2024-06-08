@@ -120,7 +120,7 @@ export default function ExistingEvents() {
         hideProgressBar={false}
         newestOnTop
         closeOnClick
-        rtl
+        rtl={false}
         pauseOnFocusLoss={false}
         draggable
         pauseOnHover
@@ -244,7 +244,7 @@ export default function ExistingEvents() {
         <BiPlus />
       </button>
       <div className="footer">
-        <p>DURGA PRASAD © 2024</p>
+        <p>EVENT ORGANIZER © 2024</p>
       </div>
     </>
   );

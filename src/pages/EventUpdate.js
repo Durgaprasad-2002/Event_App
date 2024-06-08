@@ -150,7 +150,7 @@ export default function EventUpdate() {
         hideProgressBar={false}
         newestOnTop
         closeOnClick
-        rtl
+        rtl={false}
         pauseOnFocusLoss={false}
         draggable
         pauseOnHover
