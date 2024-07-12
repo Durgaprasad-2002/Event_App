@@ -181,7 +181,7 @@ export default function ExistingEvents() {
                         <p>
                           <strong>Event Time :</strong>{" "}
                           <span>{event.startTime}</span>
-                          {" → "}
+                          <FaArrowsAltH />
                           <span>{event.endTime}</span>
                         </p>
                         <p>
