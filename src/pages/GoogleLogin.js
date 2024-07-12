@@ -48,7 +48,7 @@ function GoogleLoginele() {
       localStorage.setItem("googleTokens", JSON.stringify(tokens));
       console.log(tokens);
       setTimeout(() => {
-        locatStorage.clear();
+        localStorage.clear();
       }, Math.abs(Date.now() - tokens.expiry_date));
     }
   }, [navigate]);
